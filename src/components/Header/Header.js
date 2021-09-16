@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ShoppingBagIcon from "../../assets/icons/shopping-bag";
 import styles from "../../styles/components/Header/Header.module.css";
 
@@ -5,7 +6,9 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <p className={styles.logo}>The Furnish</p>
+        <Link to="/">
+          <p className={styles.logo}>The Furnish</p>
+        </Link>
         <ul>
           <li>
             <a className={styles.inactive} href="/">

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Grid } from "@material-ui/core";
 import styles from "../../styles/components/Products Grid/ProductsItem.module.css";
+import { Link } from "react-router-dom";
 
 const ProductsItem = (props) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -23,9 +24,9 @@ const ProductsItem = (props) => {
         <div>
           <img alt={product.name + " image"} src={image}></img>
         </div>
-        <a className={styles.info} href="/">
+        <Link className={styles.info} to={"/" + product.id}>
           More Info -{">"}
-        </a>
+        </Link>
       </div>
     </Grid>
   );

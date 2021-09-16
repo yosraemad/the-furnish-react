@@ -5,10 +5,17 @@
   font-family: $primary-font-family;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }

@@ -1,18 +1,19 @@
 import "./styles/App.module.css";
+import { Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import Carousel from "./components/Carousel/Carousel";
-import Quote from "./components/Quote/Quote";
-import ProductsGrid from "./components/Products Grid/ProductsGrid";
-import ViewMoreButton from "./components/View More Button/ViewMoreButton";
+import MainPage from "./pages/MainPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
 
 function App() {
   return (
     <>
       <Header />
-      <Carousel />
-      <Quote />
-      <ProductsGrid />
-      <ViewMoreButton />
+      <Route path="/" exact>
+        <MainPage />
+      </Route>
+      <Route path="/:id">
+        <ProductDetailPage />
+      </Route>
     </>
   );
 }

@@ -1,0 +1,129 @@
+@import "../variables/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  padding: 15px;
+  img {
+    margin: 20px 0;
+    width: 90vw;
+  }
+}
+
+.path {
+  font-size: 10px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .type {
+    font-family: $secondary-font-family;
+    font-weight: 300;
+  }
+
+  button {
+    width: 100px;
+    height: 30px;
+    background: rgba($color: #fff, $alpha: 0.7);
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover {
+      background: rgba(83, 78, 78, 0.7);
+    }
+  }
+}
+
+.right {
+  padding: 20px;
+}
+
+.label {
+  font-family: $secondary-font-family;
+  margin-bottom: 10px;
+}
+
+.intro-text {
+  margin-bottom: 25px;
+}
+
+.dimensions,
+.materials,
+.good-to-know {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin: 24px 0;
+}
+
+.labelBold {
+  font-weight: bold;
+}
+
+.look-book {
+  width: 100%;
+  height: 50px;
+  background: rgb(255, 119, 142);
+  margin-top: 20px;
+  p {
+    padding: 8px 14px;
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+.social {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 13px;
+
+  .twitter {
+    padding: 0 12px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .left {
+    width: 50vw;
+    height: 82vh;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    img {
+      width: 40vw;
+    }
+  }
+
+  .right {
+    width: 30vw;
+    margin-left: 10vw;
+  }
+
+  .social {
+    align-self: flex-end;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 93px;
+    height: 50px;
+    justify-content: space-between;
+    .twitter {
+      padding: 0;
+    }
+  }
+}
