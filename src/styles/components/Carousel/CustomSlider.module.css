@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,600&display=swap");
+.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container img {
+  width: 200px;
+  padding-top: 30px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+}
+
+.info button {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  height: 40px;
+  background: white;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.info button:hover {
+  background-color: #e6e6e6;
+}
+
+.type {
+  font-size: 8px;
+  font-family: "Poppins";
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    height: 90vh;
+    width: 100vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .container img {
+    height: 300px;
+    width: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 25vh;
+    margin-left: 11vh;
+  }
+  .info {
+    width: 20vw;
+    margin-bottom: 25vh;
+    margin-left: 20vh;
+  }
+  .info button {
+    width: 150px;
+  }
+}
+/*# sourceMappingURL=CustomSlider.module.css.map */

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,yFAAI;AACZ,OAAO,CAAC,sGAAI;ADAZ,AAAA,MAAM,CAAC;EACL,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;CAMpB;;AATD,AAKE,MALI,CAKJ,CAAC,CAAC;EACA,WAAW,ECCS,SAAS;EDA7B,SAAS,EAAE,IAAI;CAChB",
+    "sources": [
+        "Quote.module.scss",
+        "../../variables/variables.scss"
+    ],
+    "names": [],
+    "file": "Quote.module.css"
+}

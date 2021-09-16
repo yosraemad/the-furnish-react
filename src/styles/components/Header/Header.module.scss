@@ -1,0 +1,46 @@
+@import "../../variables/variables.scss";
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  ul {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.container {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.shopping-bag {
+  height: 20px;
+  width: 20px;
+}
+
+.bold {
+  font-weight: bold;
+  color: $primary-text-color;
+}
+
+.inactive {
+  color: $inactive-text-color;
+}
+
+.logo {
+  font-family: $secondary-font-family;
+  font-weight: 400;
+  font-size: 15px;
+}

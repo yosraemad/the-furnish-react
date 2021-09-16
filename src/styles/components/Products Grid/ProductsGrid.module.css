@@ -1,0 +1,10 @@
+.grid-container {
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .grid-container {
+    margin: 0 140px;
+  }
+}
+/*# sourceMappingURL=ProductsGrid.module.css.map */

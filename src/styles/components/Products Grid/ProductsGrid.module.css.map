@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACd,MAAM,EAAE,CAAC;CACV;;AACD,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EACjC,AAAA,eAAe,CAAC;IACd,MAAM,EAAE,OAAO;GAChB",
+    "sources": [
+        "ProductsGrid.module.scss"
+    ],
+    "names": [],
+    "file": "ProductsGrid.module.css"
+}

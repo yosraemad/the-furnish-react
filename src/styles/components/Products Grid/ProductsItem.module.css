@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,600&display=swap");
+.container {
+  display: block;
+  height: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container img {
+  width: 30vw;
+}
+
+.name {
+  padding-top: 10px;
+  font-family: "Raleway";
+  font-weight: bold;
+}
+
+.info {
+  color: black;
+  padding-bottom: 10px;
+  font-size: 8px;
+  font-weight: bold;
+  position: relative;
+}
+
+.info::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 5px;
+  left: -10px;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    height: 50vh;
+  }
+  .container img {
+    width: auto;
+    height: 150px;
+  }
+  .container .name {
+    padding-top: 30px;
+  }
+  .container .info {
+    padding-bottom: 30px;
+  }
+  .container .info::before {
+    bottom: 25px;
+  }
+}
+/*# sourceMappingURL=ProductsItem.module.css.map */

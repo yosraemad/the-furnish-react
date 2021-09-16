@@ -1,0 +1,65 @@
+.carousel {
+  position: relative;
+  display: block;
+  max-height: 90vh;
+}
+
+.back,
+.next {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  font-size: 15px;
+  position: absolute;
+  padding-bottom: 1px;
+  top: 50%;
+
+  &:hover {
+    background: rgb(233, 233, 233);
+  }
+}
+
+.back {
+  left: 3%;
+}
+.next {
+  right: 3%;
+}
+
+.dot-group {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  button {
+    margin: 0 8px;
+    width: 20px;
+    background: rgba($color: #fff, $alpha: 0.3);
+    border: 1px solid rgba($color: #fff, $alpha: 0.3);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .dot-group {
+    right: -30vw;
+    bottom: 125px;
+  }
+
+  .back,
+  .next {
+    top: auto;
+    bottom: 110px;
+  }
+
+  .back {
+    left: auto;
+    right: 25%;
+  }
+
+  .next {
+    right: 11%;
+  }
+}

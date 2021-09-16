@@ -1,0 +1,57 @@
+@import "../../variables/variables.scss";
+.container {
+  display: block;
+  height: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 30vw;
+  }
+}
+
+.name {
+  padding-top: 10px;
+  font-family: $primary-font-family;
+  font-weight: bold;
+}
+
+.info {
+  color: black;
+  padding-bottom: 10px;
+  font-size: 8px;
+  font-weight: bold;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: rgba($color: #fff, $alpha: 0.5);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 5px;
+    left: -10px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    height: 50vh;
+    img {
+      width: auto;
+      height: 150px;
+    }
+    .name {
+      padding-top: 30px;
+    }
+    .info {
+      padding-bottom: 30px;
+      &::before {
+        bottom: 25px;
+      }
+    }
+  }
+}

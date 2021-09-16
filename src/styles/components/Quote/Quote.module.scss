@@ -1,0 +1,11 @@
+@import "../../variables/variables.scss";
+.quote {
+  text-align: center;
+  margin-top: 73px;
+  margin-bottom: 73px;
+
+  p {
+    font-family: $secondary-font-family;
+    font-size: 30px;
+  }
+}
